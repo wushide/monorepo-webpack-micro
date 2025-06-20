@@ -1,6 +1,5 @@
 import { createApp, defineAsyncComponent } from "vue";
 import Layout from "./Layout.vue";
-import "../tailwind.scss";
 
 const Content = defineAsyncComponent(() => import("home/Content"));
 const Button = defineAsyncComponent(() => import("home/Button"));

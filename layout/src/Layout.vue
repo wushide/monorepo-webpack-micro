@@ -6,7 +6,7 @@
       <h1>Layout App 1</h1>
       <div class="remote-component">
         <!-- remote-component REMOTE -->
-        <div class="app-label text-blue-600">#remote-component [REMOTE]</div>
+        <div class="text-blue-500 font-900">#remote-component [REMOTE]</div>
         <content-element> this is slots </content-element>
         <button-element />
         <el-button type="primary">Button</el-button>
