@@ -59,7 +59,7 @@ module.exports = async (env = {}) => {
       ],
     },
     plugins: [
-      UnoCSS(), // 确保 UnoCSS 插件已正确加载
+      UnoCSS(), // 确保 UnoCSS 插件优先加载
       AutoImport({
         resolvers: [ElementPlusResolver()],
       }),

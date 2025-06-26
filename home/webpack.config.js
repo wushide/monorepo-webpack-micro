@@ -53,15 +53,12 @@ module.exports = async (env = {}) => {
         },
         {
           test: /\.scss$/,
-          use: [
-            MiniCssExtractPlugin.loader,
-            "css-loader",
-            "sass-loader",
-          ],
+          use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
         },
       ],
     },
     plugins: [
+      UnoCSS(), // 添加 UnoCSS 插件
       AutoImport({
         resolvers: [ElementPlusResolver()],
       }),
@@ -106,7 +103,6 @@ module.exports = async (env = {}) => {
         template: path.resolve(__dirname, "./index.html"),
       }),
       new VueLoaderPlugin(),
-      UnoCSS(), // 添加 UnoCSS 插件
     ],
     devServer: {
       static: {

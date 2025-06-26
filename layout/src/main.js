@@ -1,5 +1,6 @@
 import { createApp, defineAsyncComponent } from "vue";
 import Layout from "./Layout.vue";
+import "uno.css";
 
 const Content = defineAsyncComponent(() => import("home/Content"));
 const Button = defineAsyncComponent(() => import("home/Button"));
